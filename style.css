@@ -1,0 +1,765 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* BODY */
+body {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #0ea5e9);
+  color: white;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.navbar h2 {
+  font-size: 22px;
+}
+
+.navbar a {
+  padding: 8px 16px;
+  border: 1px solid white;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  background: white;
+  color: #1e3a8a;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  color: #dbeafe;
+}
+
+/* BUTTONS */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #ec4899;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-outline {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+}
+
+/* GRID */
+.grid {
+  margin-top: 40px;
+  display: grid;
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.card p {
+  margin-top: 8px;
+  color: #dbeafe;
+}
+
+/* SMALL OPTIONS */
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.options .card {
+  padding: 10px 18px;
+  border-radius: 30px;
+}
+
+/* CONTACT */
+.contact {
+  margin-top: 60px;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+/* CONTACT GRID */
+.contact-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+/* LEFT */
+.contact-info {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 15px;
+}
+
+/* FORM */
+.contact-form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 15px;
+}
+
+/* INPUT ROW */
+.input-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.input-row input {
+  flex: 1;
+}
+
+/* INPUT */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* TEXTAREA */
+.contact-form textarea {
+  height: 120px;
+  margin-bottom: 15px;
+  resize: none;
+}
+
+/* BUTTON */
+.contact-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: #ec4899;
+  color: white;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  margin-top: 50px;
+  color: #cbd5f5;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px) {
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+
+  .input-row {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+}
+
+/*register*/
+
+.body1 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+/* Card Container */
+.container1 {
+  width: 350px;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: fadeIn 0.6s ease;
+}
+
+/* Title */
+.container1 h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #ff4b2b;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 75, 43, 0.4);
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*login*/
+.body2 {
+  margin: 0;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial;
+
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* DASHBOARD BOX */
+
+.container2 {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+  text-align: center;
+  width: 300px;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* BUTTON STYLE */
+
+button {
+
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 16px;
+  color: white;
+
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/*challenges*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  font-family: 'Segoe UI', sans-serif;
+
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+
+  color: white;
+}
+
+.dashboard {
+  padding: 20px;
+}
+
+#challengeList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.challenge-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* ======================== */
+/* CONTAINER */
+/* ======================== */
+
+.dashboard {
+
+  max-width: 800px;
+
+  margin: auto;
+
+  padding: 60px 20px;
+}
+
+h2 {
+
+  text-align: center;
+
+  margin-bottom: 40px;
+
+  font-size: 34px;
+}
+
+
+/* ======================== */
+/* CARD */
+/* ======================== */
+
+.challengeCard {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 20px;
+
+  margin-bottom: 20px;
+
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  transition: 0.3s;
+}
+
+.challengeCard:hover {
+
+  transform: translateY(-5px);
+
+  box-shadow: 0 0 25px rgba(255, 100, 100, 0.3);
+}
+
+
+/* ======================== */
+/* LEFT SIDE */
+/* ======================== */
+
+.challengeInfo {
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+.challengeTitle {
+
+  font-size: 20px;
+
+  font-weight: 600;
+
+  margin-bottom: 5px;
+}
+
+.challengeMeta {
+
+  font-size: 14px;
+
+  color: #bbb;
+}
+
+
+/* ======================== */
+/* BUTTON */
+/* ======================== */
+
+.solveBtn {
+
+  background: linear-gradient(90deg, #ff7a18, #ff4d6d);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  white-space: nowrap;
+  flex-shrink: 0;
+  width: auto;
+  min-width: 160px;
+  text-align: center;
+}
+
+/* ======================== */
+/* RESPONSIVE */
+/* ======================== */
+
+@media(max-width:700px) {
+
+  .challengeCard {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .solveBtn {
+
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+/*editor*/
+/* Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
+
+/* Main container */
+.editor-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Title */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* Code textarea */
+textarea {
+  width: 100%;
+  height: 350px;
+  background: #020617;
+  color: #00ffcc;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  font-family: monospace;
+  font-size: 15px;
+  outline: none;
+}
+
+/* Focus effect */
+textarea:focus {
+  border-color: #ff7a18;
+}
+
+/* Controls (dropdown + button centered) */
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  /* mobile friendly */
+}
+
+
+/* Language dropdown */
+#language {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  background: #1e293b;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Button styling */
+.runBtn {
+  background: linear-gradient(90deg, #ff7a18, #ff4d6d);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  width: auto;
+  min-width: 180px;
+  max-width: 250px;
+}
+
+/* Button hover */
+.runBtn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Output styling */
+#result {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #00ffcc;
+}
+
+/* Optional: smooth animation */
+.runBtn:active {
+  transform: scale(0.95);
+}
+
+/*badges*/
+/* ===============================
+   BADGES PAGE
+================================ */
+.body5 {
+  margin: 0;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+.badgeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.badgeCard {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 25px;
+  width: 180px;
+  text-align: center;
+  color: white;
+  transition: 0.3s;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.badgeCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(255, 150, 150, 0.6);
+}
+
+.badgeIcon {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.badgeTitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* locked badge style */
+
+.locked {
+  opacity: 0.3;
+  filter: grayscale(100%);
+}
+
+/* ===============================
+   GLOBAL RESET
+================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.body5 {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+}
+
+/* ===============================
+   CARD CONTAINER
+================================= */
+.dashboard {
+  width: 500px;
+  padding: 35px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.dashboard h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+/* ===============================
+   LEADERBOARD
+================================= */
+
+#leaderList {
+  list-style: none;
+}
+
+.leaderItem {
+  padding: 15px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.12);
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.leaderItem:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.22);
+}
+
+/* TOP 3 MEDAL COLORS */
+.leaderItem:nth-child(1) {
+  border-left: 6px solid gold;
+}
+
+.leaderItem:nth-child(2) {
+  border-left: 6px solid silver;
+}
+
+.leaderItem:nth-child(3) {
+  border-left: 6px solid #cd7f32;
+}
+
+/* ===============================
+   PROGRESS PAGE
+================================= */
+
+#progressText {
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Progress bar container */
+.progressContainer {
+  width: 100%;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+/* Progress fill */
+#progressBar {
+  height: 100%;
+  width: 0%;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  transition: width 0.6s ease;
+}

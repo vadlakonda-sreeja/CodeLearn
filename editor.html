@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Code Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body4">
+
+  <div class="editor-container">
+
+    <h2 id="challengeTitle">Loading Challenge...</h2>
+
+    <textarea id="codeArea" placeholder="Write your code here..."></textarea>
+
+    <br><br>
+    <div class="controls">
+      <select id="language">
+        <option value="63">JavaScript</option>
+        <option value="71">Python</option>
+        <option value="62">Java</option>
+      </select>
+
+      <button class="runBtn" onclick="submitSolution()">
+        Submit Solution
+      </button>
+    </div>
+
+    <p id="result"></p>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js"></script>
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
